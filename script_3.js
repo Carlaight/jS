@@ -1,3 +1,5 @@
+console.log("~~~~Pyramide de Mario~~~~")
+console.log("===================================================");
 /* "Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?"
 Utilisateur rentre un nombre (par ex 5)
     #
@@ -21,3 +23,5 @@ function buildPyramid(nbfloors)
 console.log(buildPyramid())
 
 // manque le dernier étage
+
+console.log("===================================================");

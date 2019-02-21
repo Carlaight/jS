@@ -1,3 +1,6 @@
+console.log("Opérations & boucles");
+console.log("===================================================");
+
 //Un prompt s'affiche avec la question suivante
 number = prompt("De quel nombre veut tu calculer la factorielle ?");
 // Utilisateur rentre un nombre (par ex 4)
@@ -11,4 +14,7 @@ function calcFact(number) {
 }
 
 // Dans la console le résultat suivant est affiché "Le résultat est : 24"
+console.log("Le résultat est")
 console.log(calcFact(number))
+
+console.log("===================================================");
