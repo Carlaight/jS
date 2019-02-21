@@ -6,8 +6,6 @@ Utilisateur rentre un nombre (par ex 5)
  ####
 ##### */
 
-
-
 function buildPyramid(nbfloors)
 {
   nbfloors = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
@@ -21,3 +19,5 @@ function buildPyramid(nbfloors)
 }
 
 console.log(buildPyramid())
+
+// manque le dernier étage
