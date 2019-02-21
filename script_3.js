@@ -12,7 +12,7 @@ function buildPyramid(nbfloors)
 {
   nbfloors = prompt("Salut, bienvenue dans ma super pyramide ! Combien d'étages veux-tu ?");
 
-  for (let i = 1; i < nbfloors; i++)
+  for (let i = 0; i < nbfloors; i++)
   {
     let string1 = " ".repeat(nbfloors-i);
     let string2 = "#".repeat(i);

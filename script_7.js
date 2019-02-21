@@ -23,12 +23,29 @@ console.log("===================================================");
 console.log("Quel est livre le plus emprunté ?");
 
 
+let var_to_see_wich_book_have_been_the_most_rented = 0
+let title_of_the_most_rented_book = ""
+books.forEach(one => {
+	if (one.rented > var_to_see_wich_book_have_been_the_most_rented) {
+		title_of_the_most_rented_book = one.title
+	}
+});
+console.log(title_of_the_most_rented_book)
 
 console.log("===================================================");
 
 console.log("Quel est le livre le moins emprunté ?");
 
 
+let var_to_see_wich_book_havent_been_the_most_rented = 0
+let title_of_the_most_unrented_book = ""
+books.forEach(one => {
+	if (var_to_see_wich_book_havent_been_the_most_rented - one.rented > 0 || var_to_see_wich_book_havent_been_the_most_rented == 0) {
+var_to_see_wich_book_havent_been_the_most_rented = one.rented
+		title_of_the_most_unrented_book = one.title;
+	}
+});
+console.log(title_of_the_most_unrented_book)
 
 console.log("===================================================");
 
@@ -42,12 +59,18 @@ console.log("===================================================");
 
 console.log("Supprime le livre avec l'ID: 133712");
 
-let books_clone = books;
+let nb_of_books = books.length
+let id_of_the_book_to_delete
 
-
-
-
-
+for(let count=0; count<= nb_of_books-1; count++) {
+	let one = books[count]
+	if (one.id == 133712) {
+		id_of_the_book_to_delete = count
+	}
+}
+console.log(id_of_the_book_to_delete)
+books[id_of_the_book_to_delete] = 0
+console.log(books)
 
 console.log("===================================================");
 
