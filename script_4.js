@@ -57,8 +57,7 @@ count = 0;
 let temp = 0;
 for (let i = 0; i < array.length; i++)
 {
-  if((temp = array[i].match((/_/g)||[])))
-    count += temp.length;
+  if(array[i].match((/_/g))){ count++;}
 }
 console.log(count);
 
